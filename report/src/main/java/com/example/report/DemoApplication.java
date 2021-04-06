@@ -21,25 +21,7 @@ public class DemoApplication {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(DemoApplication.class, args);
 
-        System.out.println("Let's inspect the beans provided by Spring Boot:");
-
-        String[] beanNames = ctx.getBeanDefinitionNames();
-        Arrays.sort(beanNames);
-        for (String beanName : beanNames) {
-            System.out.println(beanName);
-        }
+     
 	}
-	
-	// @Bean
-    // CommandLineRunner initDatabase(ReportRepository repository) {
 
-        // User admin = (User)userDetail.loadUserByUsername("admin");
-
-        // return args -> {
-        //     repository.save(new Report("First report", Report.Status.DRAFT,admin));
-        //     repository.save(new Report("Second report", Report.Status.INWORK,admin));
-        //     repository.save(new Report("3rd report", Report.Status.ACCEPTED,admin));
-        //     repository.save(new Report("Fourth report", Report.Status.REJECTED,admin));
-        // };
-    // }
 }
